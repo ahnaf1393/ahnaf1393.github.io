@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ahnaf Munir</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ahnaf Munir</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Ahnaf Munir profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ahnaf Munir</h1>
+        <p class="section__text__p2">Assistant Professor <br> Islamic University of Technology</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Ahnaf_Munir_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ahnaf1393'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="text-container">
+        <p>
+          I am an Assistant Professor in the Computer Science and Engineering Department at the
+          <a href="https://www.iutoic-dhaka.edu/", style="color: Blue">Islamic University of Technology (IUT)</a>. I joined IUT as a lecturer in 2016. 
+          I recently finished my Master's degree from the <a href="https://www.tum.de/en/", style="color: Blue">Technical University of Munich (TUM)</a>. 
+          During my Master's I worked as a graduate research student at <a href="https://www.iis.fraunhofer.de/en.html", style="color: Blue">Fraunhofer IIS</a>, one of the leading research institutes in Germany.
+        </p>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+    </section>
+
+    <section id="education">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Education</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+                src="./assets/tum.png"
+                alt="TUM icon"
+                class="edu-icon"
+              />
+              <h4>Master of Science</h4>
+              <h3>Technical University of Munich</h3>
+              <p><b>Thesis:</b> Learning Neural Surface Representation from <br>Prominent Objects  in Video Sequences</p>
+          </div>
+          <div class="details-container">
+            <img
+                src="./assets/iut.png"
+                alt="IUT icon"
+                class="edu-icon"
+              />
+              <h4>Bachelor of Science</h4>
+              <h3>Islamic University of Technology</h3>
+              <p><b>Thesis:</b> Cellular Automaton Based Motion Planning <br>for Mobile Wireless Sensor Network</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+                src="./assets/fatima.jpg"
+                alt="Fatima icon"
+                class="edu-icon"
+              />
+              <h4>Fellow</h4>
+              <h3>Fatima Fellowship</h3>
+              <p>Working on openable part detection and motion estimation techniques under
+                the supervision a current PhD student from the Georgia Institute of Technology</p>
+          </div>
+          <div class="details-container">
+            <img
+                src="./assets/iut.png"
+                alt="IUT icon"
+                class="edu-icon"
+              />
+              <h4>Assistant Professor</h4>
+              <h3>Islamic University of Technology</h3>
+              <p>Conducting lectures on the topics ‘Deep Learning’ and ‘Artificial Intelligence’</p>
+          </div>
+          <div class="details-container">
+            <img
+                src="./assets/fraunhofer.jpg"
+                alt="Fraunhofer icon"
+                class="edu-icon"
+              />
+              <h4>Graduate Research Student</h4>
+              <h3>Fraunhofer IIS</h3>
+              <p>Experimented with the application of deep learning-based video super-resolution
+                techniques for video encoding</p>
+          </div>
+          <div class="details-container">
+            <img
+                src="./assets/tum.png"
+                alt="TUM icon"
+                class="edu-icon"
+              />
+              <h4>Student Assistant</h4>
+              <h3>Technical University of Munich</h3>
+              <p>Worked under the chair of Information Systems to develop a business
+                modeling tool using Java.</p>
+          </div>
+          <div class="details-container">
+            <img
+                src="./assets/algoma.png"
+                alt="algoma icon"
+                class="edu-icon"
+              />
+              <h4>Research Assistant (Remote)</h4>
+              <h3>Algoma University</h3>
+              <p>Worked under the supervision of Dr. Salimur Choudhury in the field of Mobile
+                Sensor Networks (MWSN) and Radio Frequency Identification (RFID) networks
+                which resulted in 1 journal paper and 1 conference paper.</p>
+          </div>
+          <div class="details-container">
+            <img
+                src="./assets/nilavo.png"
+                alt="nilavo icon"
+                class="edu-icon"
+              />
+              <h4>Software Development Intern</h4>
+              <h3>Nilavo Technologies Limited</h3>
+              <p>Dealt with front-end and back-end development and optimization of the in-house
+                developed project management tool of the company.</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#publications'"
+      />
+    </section>
+
+    <section id="publications">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Publications</h1>
+      <div class="experience-details-container">
+        
+          <div class="details-container">
+            <div class="left-align">
+              <h4>Decoding Depression:
+                Harnessing Social Media Insights with Transformers for Precise Depression Severity Assessment and Explainability Analysis</h4>
+              <p>Tasnim Ahmed, Shahriar Ivan, <u>Ahnaf Munir</u>, Sabbir Ahmed</p>
+              <p, style="color:red">Under Review</p>
+            </div>
+          </div>
+          <br>
+          <div class="details-container">
+            <div class="left-align">
+              <h4>Structure-Enhanced Translation from PET to CT Modality with Paired GANs</h4>
+              <p>Tasnim Ahmed, <u>Ahnaf Munir</u>, Sabbir Ahmed, Md. Bakhtiar Hasan, Md. Taslim Reza, Md. Hasanul Kabir</p>
+              <p, style="color:red">International Conference on Machine Vision and Application, ICMVA 2023</p>
+            </div>
+          </div>
+          <br>
+          <div class="details-container">
+            <div class="left-align">
+              <h4>A localized fault tolerant load balancing algorithm for RFID systems</h4>
+              <p><u>Ahnaf Munir</u>, Md. Tahmid Rahman Laskar, Md. Sakhawat Hossen Salimur Choudhury</p>
+              <p, style="color:red">Journal of Ambient Intelligence and Humanized Computing, 2018</p>
+            </div>
+          </div>
+          <br>
+          <div class="details-container">
+            <div class="left-align">
+              <h4>Localized Load Balancing in RFID Systems</h4>
+              <p><u>Ahnaf Munir</u>, Md. Sakhawat Hossen and Salimur Choudhury</p>
+              <p, style="color:red">International Conference on the Theory and Practice of Natural Computing, TPNC 2016</p>
+            </div>
+          </div>
+          <br>
+          <div class="details-container">
+            <div class="left-align">
+              <h4>Localized motion planning algorithm for mobile wireless sensor networks</h4>
+              <p><u>Ahnaf Munir</u>, Shihabuzzaman, Md. Sakhawat Hossen, Salimur Choudhury, Muhammad Mahbub Alam</p>
+              <p, style="color:red">International Journal of Unconventional Computing, 2016</p>
+            </div>
+          </div>
+        
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Deep Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pytorch</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h4>IMU and Bundle Adjustment</h4>
+              <div class="left-align">
+                <p>
+                  A fast and accurate estimation of the smartphone camera trajectory using the IMU sensor data and camera RGB
+                  data of the smartphone.
+                </p>
+              </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jacobsjo/IMUBundleAdjustment/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h4>Table League AR</h4>
+              <div class="left-align">
+                <p>
+                  An AR-based multiplayer android game that takes inspiration from traditional tower defense and football games.
+                </p>
+              </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Bone008/table-league-ar/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h4>Tetris 360</h4>
+              <div class="left-align">
+                <p>
+                  A Tetris game developed for Virtual Reality (VR). The game was developed to collect data for Advanced Realtime
+                  Tracking (ART) sensors which were fitted to the VR controller.
+                </p>
+              </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ahnaf1393/360-Tetris/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h4>Physician Interest Predictor</h4>
+              <div class="left-align">
+                <p>
+                  Application of popular machine learning-based business analysis tools on real-world data to predict whether
+                  physicians have interest in different pharmaceutical companies.
+                </p>
+              </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ahnaf1393/PhysicianInterestPrediction/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#achievements'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">ahnaf1393@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ahnafmunir">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
