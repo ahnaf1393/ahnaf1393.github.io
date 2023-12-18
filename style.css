@@ -90,6 +90,12 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+.left {
+  color:rgb(85, 85, 85);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .menu-links {
   position: absolute;
   top: 100%;
